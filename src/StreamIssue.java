@@ -8,7 +8,7 @@ public class StreamIssue {
         System.out.println("------------------------------------------------------------");
 
         System.out.print("6文字以上の名前でフィルターにかけ大文字に変換: ");
-        System.out.println(names.stream().filter(overSixWords -> overSixWords.length() >= 6).map(String::toUpperCase).toList());
+        System.out.println(names.stream().filter(name -> name.length() >= 6).map(String::toUpperCase).toList());
         System.out.println("------------------------------------------------------------");
 
         List<String> sortedResult = names.stream().sorted().toList();
