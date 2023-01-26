@@ -16,7 +16,7 @@ public class StreamIssue {
         System.out.println("------------------------------------------------------------");
 
         long count = names.stream().filter(bear -> bear.startsWith("p")).count();
-        System.out.println("pから始まる名前のキャラクター数: " + count);
+        System.out.println("pから始まる名前のキャラクターの数: " + count);
         System.out.println("------------------------------------------------------------");
 
         boolean startsP = names.stream().allMatch(bear -> bear.startsWith("p"));
